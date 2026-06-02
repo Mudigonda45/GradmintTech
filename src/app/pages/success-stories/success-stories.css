@@ -1,0 +1,155 @@
+.success-section {
+  padding: 100px 30px;
+  background: #020b2d;
+
+  background-image:
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.success-section h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.success-section h2 span {
+  background: linear-gradient(90deg,#2563eb,#06b6d4,#00ff99);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 24px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.stories-grid {
+  margin-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 30px;
+}
+
+.story-card {
+  background: rgba(8,15,35,.9);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  transition: .3s;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  border-color: #2563eb;
+}
+
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #d1d5db;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.profile h3 {
+  margin: 0;
+}
+
+.profile small {
+  color: #8b93a7;
+}
+
+.role {
+  color: #00ff99;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.quote {
+  font-size: 50px;
+  color: #d1d5db;
+  margin-top: 20px;
+}
+
+.story-text {
+  color: #aeb6c7;
+  line-height: 1.8;
+  min-height: 130px;
+}
+
+.footer {
+  border-top: 1px solid rgba(255,255,255,.08);
+
+  margin-top: 20px;
+  padding-top: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  color: #6b7280;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.company {
+  background: rgba(255,255,255,.08);
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+@media(max-width:992px){
+
+  .stories-grid{
+    grid-template-columns:1fr;
+  }
+
+  .success-section h2{
+    font-size:40px;
+  }
+
+  .subtitle{
+    font-size:18px;
+  }
+}

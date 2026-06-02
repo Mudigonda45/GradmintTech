@@ -1,0 +1,33 @@
+<section class="apply-page">
+
+  <h1>
+    Apply for <span>Internship</span>
+  </h1>
+
+  <p class="subtitle">
+    Take the first step towards an industry-ready career.
+  </p>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <input type="text" placeholder="Full Name" formControlName="fullName">
+
+    <input type="email" placeholder="Email Address" formControlName="email">
+
+    <input type="text" placeholder="Phone Number" formControlName="phone">
+
+    <input type="text" placeholder="College / University" formControlName="college">
+
+    <input type="text" placeholder="Graduation Year" formControlName="graduationYear">
+
+    <input type="text" placeholder="Interested Domain" formControlName="domain">
+
+    <input type="text" placeholder="Resume Link" formControlName="resume">
+
+    <button type="submit" [disabled]="loading">
+  {{ loading ? 'Submitting...' : 'Submit Application ' }}
+</button>
+
+  </form>
+
+</section>

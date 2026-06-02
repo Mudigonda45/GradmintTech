@@ -1,0 +1,110 @@
+<!-- <section class="programs-section">
+
+  <h2>
+    Premium <span>Internship Programs</span>
+  </h2>
+
+  <p class="subtitle">
+    Master in-demand skills through structured cohorts.
+  </p>
+
+  <div class="program-grid">
+
+    <div class="program-card" *ngFor="let program of programs">
+
+      <div class="top">
+
+        <div>
+          <h3>{{ program.title }}</h3>
+          <p>{{ program.level }}</p>
+        </div>
+
+        <span class="duration">
+          {{ program.duration }}
+        </span>
+
+      </div>
+
+      <div class="tech-list">
+
+        <span *ngFor="let tech of program.technologies">
+          {{ tech }}
+        </span>
+
+      </div>
+
+      <div class="actions">
+
+        <a [routerLink]="['/program', program.id]">
+          View Details
+        </a>
+
+        <a [href]="program.whatsapp" target="_blank">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section> -->
+<section id="programs" class="programs-section">
+
+  <h2>
+    Premium <span>Internship Programs</span>
+  </h2>
+
+  <p class="subtitle">
+    Master in-demand skills through structured cohorts.
+  </p>
+
+  <div class="program-grid">
+
+    <div class="program-card" *ngFor="let program of programs">
+
+      <div class="top">
+        <div>
+          <h3>{{ program.title }}</h3>
+          <p>{{ program.level }}</p>
+        </div>
+
+        <span class="duration">
+          {{ program.duration }}
+        </span>
+      </div>
+
+      <div class="tech-list">
+        <span *ngFor="let tech of program.technologies">
+          {{ tech }}
+        </span>
+      </div>
+
+      <div class="actions">
+        <a [routerLink]="['/program', program.id]">
+          View Details
+        </a>
+
+        <a [href]="program.whatsapp" target="_blank">
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="how-it-works">
+  <app-how-it-works></app-how-it-works>
+</section>
+
+<section id="success-stories">
+  <app-success-stories></app-success-stories>
+</section>
+
+<section id="apply">
+  <app-apply></app-apply>
+</section>
