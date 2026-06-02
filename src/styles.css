@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,56 @@
   font-family: Inter, sans-serif;
 }
 
-body {
-  background: #020617;
-}
+/* Smooth Scroll */
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Global */
+
+body {
+  background: #020617;
+  overflow-x: hidden;
+  width: 100%;
+  color: white;
+}
+
+/* Prevent images from breaking mobile layout */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+  font-family: inherit;
+}
+
+/* Optional scrollbar styling */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d4ed8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
 }
