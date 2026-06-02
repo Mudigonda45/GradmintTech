@@ -99,6 +99,10 @@ nav a:hover {
    Navbar
 ========================= */
 
+/* =========================
+   Navbar
+========================= */
+
 .navbar {
   position: fixed;
   top: 15px;
@@ -120,12 +124,13 @@ nav a:hover {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255,255,255,.08);
+
   border-radius: 18px;
 
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 8px 30px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.05);
 
   z-index: 1000;
 }
@@ -142,8 +147,6 @@ nav a:hover {
   color: white;
   font-size: 22px;
   font-weight: 700;
-
-  cursor: pointer;
 }
 
 .logo-icon {
@@ -162,11 +165,12 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
-  color: white;
   font-weight: 800;
 
+  color: white;
+
   box-shadow:
-    0 6px 20px rgba(37, 99, 235, 0.4);
+    0 6px 20px rgba(37,99,235,.4);
 }
 
 /* =========================
@@ -183,12 +187,13 @@ nav a {
   position: relative;
 
   text-decoration: none;
+
   color: #cbd5e1;
 
   font-size: 15px;
   font-weight: 500;
 
-  transition: all 0.3s ease;
+  transition: .3s;
 }
 
 nav a:hover {
@@ -199,6 +204,7 @@ nav a::after {
   content: '';
 
   position: absolute;
+
   left: 0;
   bottom: -6px;
 
@@ -211,7 +217,7 @@ nav a::after {
     #06b6d4
   );
 
-  transition: width 0.3s ease;
+  transition: .3s;
 }
 
 nav a:hover::after {
@@ -236,22 +242,23 @@ nav a:hover::after {
   );
 
   color: white;
+
   font-size: 14px;
   font-weight: 600;
 
   cursor: pointer;
 
-  transition: all 0.3s ease;
+  transition: .3s;
 
   box-shadow:
-    0 8px 25px rgba(37, 99, 235, 0.35);
+    0 8px 25px rgba(37,99,235,.35);
 }
 
 .apply-btn:hover {
   transform: translateY(-3px);
 
   box-shadow:
-    0 12px 35px rgba(37, 99, 235, 0.5);
+    0 12px 35px rgba(37,99,235,.5);
 }
 
 /* =========================
@@ -265,7 +272,7 @@ nav a:hover::after {
   }
 
   nav {
-    gap: 20px;
+    gap: 18px;
   }
 
 }
@@ -278,14 +285,15 @@ nav a:hover::after {
 
   .navbar {
 
-    width: 96%;
+    width: 90%;
+
     height: auto;
 
-    padding: 15px;
+    /* padding: 12px 15px; */
 
     flex-direction: column;
 
-    gap: 15px;
+    gap: 12px;
 
     top: 10px;
   }
@@ -296,24 +304,28 @@ nav a:hover::after {
 
   nav {
 
+    display: flex;
+
     width: 100%;
 
     justify-content: center;
 
     flex-wrap: wrap;
 
-    gap: 16px;
+    gap: 12px;
   }
 
   nav a {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .apply-btn {
 
     width: 100%;
 
-    max-width: 250px;
+    max-width: 220px;
+
+    padding: 10px 20px;
   }
 
 }
