@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-scrollTo(id: string) {
-  document.getElementById(id)?.scrollIntoView({
-    behavior: 'smooth'
-  });
-}
+  scrollTo(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
+  refreshPage() {
+    window.location.reload();
+  }
 }
